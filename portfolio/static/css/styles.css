@@ -1,0 +1,400 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, "sans-serif";
+}
+
+body {
+    margin: 20px 60px;
+}
+
+.header {
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.header__left {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__left__img {
+    margin-top: 12px;
+    margin-right: 12px;
+    width: 50px;
+    height: 50px;
+}
+
+.header__left__img__dot {
+    max-width:100%;
+    max-height:100%;
+}
+
+.header__left__role{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.nav {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    font-size: 18px;
+} 
+
+.nav__link{
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #1c2023
+}
+
+.nav__vertical {
+    border-left: 3px solid black;
+}
+
+.nav__link--active,
+.nav__link:hover{
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.ziheng{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 0, auto;
+}
+
+.ziheng__left {
+    margin-top: 100px;
+    max-width: 500px;
+    max-height: 500px;   
+}
+
+.ziheng__left__photo {
+    max-width: 100%;  
+}
+
+.ziheng__right {
+    margin-left: 50px;
+    max-width: 600px;
+}
+
+.ziheng__right__name {
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.name {
+    background-color: #FFFF8F;
+    border-radius: 20px;
+}
+
+.ziheng__right__caption{
+    margin-top: 25px;
+}
+
+.ziheng__right__intro{
+    margin-top: 5px;
+    line-height: 150%;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.button{
+    background-color: #FFFF8F;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 60px 38px;
+    color:#1c2023;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 6px; 
+}
+
+.button1{
+    background-color: #FFC000;
+}
+
+.button2{
+    background-color: #FA5F55;
+}
+
+.button3{
+    background-color: #89CFF0;
+}
+
+.button:hover{
+    background-color: white;
+    transition: 0.7s;
+}
+
+.footer{
+    margin-top: 180px;
+}
+
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    font-size: 22px;
+}
+
+.footer__content__left__email__name{
+    margin-bottom: 10px;
+}
+
+.footer__content__left__email__value{
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+
+.footer__content__middle__social {
+    margin: 0 auto;
+    width: auto;
+    text-align: inherit;
+}
+
+.footer__content__middle__follow__me{
+    margin-bottom: 0;
+    margin-left: 22px
+}
+
+.fa {
+    padding:10px 6px;
+    font-size: 40px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+    background: white;
+    color: black;
+}
+
+.fa-github {
+    background: white;
+    color: black;
+}
+
+.fa-instagram {
+    background: white;
+    color: black;
+}
+
+.fa-weixin {
+    background: white;
+    color: black;
+}
+
+.icon-btn:hover {
+  transform: scale(1.10);
+  color: #FFFFFF;
+}
+
+.fa-linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.fa-github:hover {
+  background-color: black;
+  color: white;
+}
+
+.fa-instagram:hover {
+    background-color: #E1306C;
+    color: white;
+}
+
+.fa-weixin:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* project page */
+.u-bare-link{
+    text-decoration: none;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.25rem;
+    row-gap: 4rem;
+    justify-content: center;
+    justify-items: center;
+    max-width: 21.875rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 48.75em) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 45rem
+    }
+}
+
+@media (min-width: 70em) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 68rem
+    }
+}
+
+.project-card__image{
+    width: 380px;
+    height: 200px;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card__meta{
+    padding: 0 1.25rem;
+}
+
+.project-card__name{
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #1c2023
+}
+
+.project-card:hover .project-card__image{
+    transform: translateY(-0.5rem);
+}
+
+.project-card:hover .project-card__name{
+    text-decoration: underline;
+}
+
+.categories{
+    display: flex;
+    padding: 0;
+    margin: 0 0 0.75rem;
+    color: #3d84a3;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.075rem;
+}
+
+.categories__tag:not(:last-of-type)::after {
+    content: "|";
+    margin: 0 0.25rem;
+}
+
+.hero{
+    width:100%;
+    max-width: 50rem;
+    margin-bottom: 1.5rem;
+}
+
+.project{
+    display:flex;
+    flex-direction: column;
+    max-width: 50rem;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.project__content {
+    margin-bottom: 1rem;
+    line-height: 150%;
+    flex: 7;
+    margin-right: 3rem;
+    padding: 0;
+}
+
+@media (min-width: 48.75em) {
+    .project{
+        flex-direction: row;
+        padding:0;
+    }
+}
+
+.project__heading{
+    margin: 0;
+    font-size: 2rem;
+    line-height: 150%
+}
+
+.project__heading--meta{
+    font-size: inherit;
+    margin-bottom: 1rem;
+}
+
+.project__meta-group{
+    margin-bottom:1rem;
+}
+
+.project__meta-group,
+.cta {
+    padding: 1rem;
+    background-color: #d4eafa;
+    border-radius: 6px;
+
+}
+
+.cta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #1c2023;
+    text-decoration: none;
+}
+
+.cta:hover{
+    text-decoration: underline;
+}
+
+.cta__icon {
+    margin-right: 0.5rem;
+}
+
+.technology-list{
+    list-style: none;
+    margin: 0;
+    padding-left: 0.75rem;
+    line-height: 1.75rem;
+}
+
+.technology-list__item::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("/static/img/list-check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    transform: translateY(2px);
+}

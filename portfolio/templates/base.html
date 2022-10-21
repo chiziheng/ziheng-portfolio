@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Ziheng | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+
+    {# social media icons #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left">
+            <div class="header__left__img">
+                <img class="header__left__img__dot" src="../static/img/yellow_dot.jpg" alt="yellow_dot"/>
+            </div>
+            <h1> Chi Ziheng </h1>
+            <div class="header__left__role"> Senior Data Analyst</div>
+        </div>
+        
+        <nav class="nav">
+            <a href="{{url_for('about')}}" class="nav__link {{ 'nav__link--active' if request.path==url_for('about') }}">
+                About
+            </a>
+            <div class = "nav__vertical"></div>
+            <a href="{{url_for('projects')}}"  class="nav__link {{ 'nav__link--active' if request.path==url_for('projects') }}">
+                Projects
+            </a>
+            <div class = "nav__vertical"></div>
+            <a href="{{url_for('resume')}}"  class="nav__link {{ 'nav__link--active' if request.path==url_for('resume') }}">
+                Resume
+            </a>
+            <div class = "nav__vertical"></div>
+            <a href="{{url_for('contact')}}"  class="nav__link {{ 'nav__link--active' if request.path==url_for('contact') }}">
+                Contact
+            </a>
+        </nav>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+    <footer class="footer">
+        <hr>
+        <div class="footer__content">
+            <section class="footer__content__left">
+                <h5 class="footer__content__left__email__name">Email</h5>
+                <h5 class="footer__content__left__email__value">zihengchi@gmail.com</h5>
+            </section>
+
+            <section class="footer__content__middle">
+                <h5 class="footer__content__middle__follow__me">Connect With Me</h5>
+                <div class="footer__content__middle__social">
+                    <a href="http://linkedin.com/in/ziheng-chi" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/chiziheng/" class="fa fa-github"></a>
+                    <a href="https://www.instagram.com/ziheng.chi/" class="fa fa-instagram"></a>
+                    <a href="https://docs.google.com/document/d/1geL3376O6OtlhhfdNPqQNg9CeX6XhD8LV4ir-seXQtg/edit?usp=sharing" class="fa fa-weixin"></a>
+                </div>
+            </section>
+
+            <section class="footer__content__right">
+                <h5>© 2022 By Chi Ziheng.</h5>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

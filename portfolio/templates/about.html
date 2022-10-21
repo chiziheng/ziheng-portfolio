@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="main main--about">
+    <article class="ziheng">
+        <div class="ziheng__left">
+            <img class = "ziheng__left__photo" src="../static/img/ziheng.jpg" alt="ziheng's photo"/>
+        </div>
+
+        <section class="ziheng__right">
+            <div class="ziheng__right__name">
+                <h2>Hi, I'm <span class="name">Chi Ziheng</span></h2>
+            </div>
+            <div class="ziheng__right__caption">
+                <h5 style="font-size: 20px; margin-bottom: 10px">A <span class="typing" style="font-weight: bold; font-size: 28px; color:#5F9EA0"></span></h5>
+            </div>
+            <h5 class="ziheng__right__intro">
+                A lift-long learner who is passionate about data. Experienced in building large-scale data pipelines, data analytics & processing, and machine modeling. Skilled in multiple programming languages including Python, SQL, Pyspark, and R. Strong team player who is proactive and able to work independently.
+            </h5>
+            <section class="ziheng__right__nav">
+                <a class="button button1" href="{{url_for('projects')}}"> Projects </a>
+                <a class="button button2" href="{{url_for('resume')}}"> Resume </a>
+                <a class="button button3" href="{{url_for('contact')}}"> Contact </a>
+            </section>
+        </section>
+    </section>
+
+</main>
+
+<script src="../static/vendor/typed.js/typed.min.js"></script>
+<script type="text/javascript">
+  var typed = new Typed('.typing',{
+    strings: ["Pythonist", "Senior Data Analyst", "Data Scientist"],
+    loop: true,
+    typeSpeed: 80,
+    backSpeed: 40
+  });
+</script>
+
+{% endblock %}
