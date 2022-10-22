@@ -35,7 +35,7 @@ projects_list = [
         'hero': 'img/time_series_forecasting_hero.png',
         'categories': ['Python', 'Pandas', 'Matplotlib', 'ARIMA'],
         'slug': 'time-series-forecasting',
-        'report': 'https://drive.google.com/file/d/1-bhPJ8F3Mo7CIIH1EogzHLxSoccx4que/view?usp=sharing',
+        'source': 'https://github.com/chiziheng/Data-and-Business-Analytics',
         'poster': 'https://drive.google.com/file/d/1-afOqqY6LBFnypQZ6rUor4RFJQe1EIzQ/view?usp=sharing'
     },
     {
