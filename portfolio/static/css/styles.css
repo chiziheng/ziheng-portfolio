@@ -360,7 +360,6 @@ body {
     padding: 1rem;
     background-color: #d4eafa;
     border-radius: 6px;
-
 }
 
 .cta{
@@ -370,6 +369,7 @@ body {
     justify-content: center;
     color: #1c2023;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .cta:hover{

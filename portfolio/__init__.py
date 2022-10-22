@@ -15,25 +15,28 @@ projects_list = [
         'name': 'Online Kindle Book Store',
         'thumb': 'img/database_big_data.jpg',
         'hero': 'img/database_big_data_hero.png',
-        'categories': ['python', 'spark', 'mysql', 'mongodb'],
+        'categories': ['python', 'bash', 'mysql', 'mongodb'],
         'slug': 'kindle-book-store',
-        'prod':''
+        'source':'https://github.com/chiziheng/Database-and-Big-Data',
+        'slides':'https://docs.google.com/presentation/d/1EGe92sxmQs03YbdXCRq2yzFKlqZGuchA/edit?usp=sharing&ouid=100745558896256792063&rtpof=true&sd=true'
     },
     {
         'name': 'Tweet Sentiment Analysis',
         'thumb': 'img/sentiment_analysis.png',
-        'hero': 'img/sentiment_analysis_hero.png',
-        'categories': ['R', 'Kera', 'Tensorflow'],
+        'hero': 'img/sentiment_analysis_hero.jpeg',
+        'categories': ['R', 'Kera', 'Machine Learning'],
         'slug': 'sentiment-analysis',
-        'prod':''
+        'source': 'https://github.com/chiziheng/Kaggle-Data-Competition',
+        'report': 'https://drive.google.com/file/d/18oKoGKipbb65vIHJ-CrJyH0MQnKSwkl0/view?usp=sharing'
     },
     {
         'name': 'Time Series Forecasting',
         'thumb': 'img/time_series_forecasting.jpg',
-        'hero': 'img/time_series_forecast_hero.png',
+        'hero': 'img/time_series_forecasting_hero.png',
         'categories': ['Python', 'Pandas', 'Matplotlib', 'ARIMA'],
         'slug': 'time-series-forecasting',
-        'prod':''
+        'report': 'https://drive.google.com/file/d/1-bhPJ8F3Mo7CIIH1EogzHLxSoccx4que/view?usp=sharing',
+        'poster': 'https://drive.google.com/file/d/1-afOqqY6LBFnypQZ6rUor4RFJQe1EIzQ/view?usp=sharing'
     },
     {
         'name': 'Joy Website',
@@ -41,7 +44,8 @@ projects_list = [
         'hero': 'img/joy_website_hero.png',
         'categories': ['Python', 'Flask', 'HTML', 'CSS'],
         'slug': 'joy-website',
-        'prod':'https://joywebsite.herokuapp.com/'
+        'prod':'https://joywebsite.herokuapp.com/',
+        'source': 'https://github.com/chiziheng/joy-website'
     },
 ]
 

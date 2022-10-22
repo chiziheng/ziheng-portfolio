@@ -1,0 +1,66 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="sentiment_analysis_hero"
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                    <p>
+                        This is a 3 people group project. The goal is to train a model that can predict tweet sentiment using training data.
+                        The overall process consists EDA, data preprocessing, model training & selection, hyperparameter tunning and prediction. 
+                        The final chosen model is a neural network model.
+                    </p>
+                    <p>
+                        Some technics used during text preprocessing:
+                        <ul>
+                            <li> Remove links</li>
+                            <li> Remove mentions</li>
+                            <li> Replace tags</li>
+                            <li> Replace ordinal</li>
+                            <li> Replace textical emoticon</li>
+                            <li> Replace word contraction</li>
+                            <li> Remove punctuation</li>
+                            <li> Stem words</li>
+                            <li> Create document term matrix</li>
+                            <li> Remove sparse terms</li>
+                            <li> One hot encoding</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Check the report to learn more details
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta"> Technologies Used </h3>
+                        <ul class="technology-list">
+                            <li class="technology-list__item"> R </li>
+                            <li class="technology-list__item"> Machine Learning </li>
+                            <li class="technology-list__item"> Kera </li>
+                        </ul>
+                    </article>
+                    <a class="cta" href="{{project['source']}}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View Source
+                    </a>
+                    <a class="cta" href="{{project['report']}}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View Report
+                    </a>
+                </section>
+            </article>
+
+
+        </div>
+    </main>
+
+{% endblock %}
