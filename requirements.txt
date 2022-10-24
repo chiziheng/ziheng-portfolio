@@ -1,2 +1,5 @@
 flask
 python-dotenv
+flask_wtf
+Flask-Mail
+python-dotenv
