@@ -1,1 +1,290 @@
 {% extends "base.html" %}
+
+{% block content %}
+<main class="main main--resume">
+    <div class="resume-container">
+        <section class="experience-container">
+            <div class="wrapper">
+                <div class="divider div-transparent div-dot"></div>
+            </div>
+            <div class="section-header"> Work Experience </div>
+            <div class="resume-cards">
+                <div class="card-content">
+                    <div class="card-content__row">
+                        <div class="col-logo">
+                            <a href="https://www.connectedfreight.com" target="_blank"><img alt="Connected Freight logo"
+                                src="/static/img/cf_logo.png" class="logo logo--cf" /></a>
+                        </div>
+                        <div class="col-name">
+                            <p>
+                                <a href="https://www.connectedfreight.com" target="_blank" class="institute-name"
+                                >Connected Freight</a>
+                            </p>
+                        </div>
+                        <div class="col-company-role">Data Scientist</div>
+                    </div>
+                    <ul>
+                        <li>
+                            Designed and implemented large-scale data <b>ETL pipelines</b> on <b>Databricks</b> that process over 2M records on a daily basis 
+                        </li>
+                        <li>
+                            Designed and developed sales dashboards with star schema model using <b>Power BI</b> which is used by Shell senior management to monitor product performance
+                        </li>
+                        <li>Built and deployed pilot product recommendation <b>Python</b> application using <b>Docker</b> and <b>Kubernetes</b> to automate the procurement decision process for one of the major customers with a minimum increase of efficiency by 20 percent</li>
+                        <li>Conducted thorough exploratory data analysis and trained machine learning models using <b>AutoML, MLfow</b> and presented insights to both our clients and stakeholders</li>
+                    </ul>
+                </div>
+                <div class="card-content__tenure">
+                    <span>May 2021 - Oct 2022 | Singapore</span>
+                </div>
+            </div>
+            <div class="resume-cards">
+                <div class="card-content">
+                    <div class="card-content__row">
+                        <div class="col-logo">
+                            <a href="https://www.ey.com" target="_blank"><img alt="EY logo"
+                                src="/static/img/ey_logo.svg" class="logo logo--ey" /></a>
+                        </div>
+                        <div class="col-name">
+                            <p>
+                                <a href="https://www.ey.com" target="_blank" class="institute-name"
+                                >Ernst & Young</a>
+                            </p>
+                        </div>
+                        <div class="col-company-role">Data Engineer Intern</div>
+                    </div>
+                    <ul>
+                        <li>
+                            Worked for a leading automotive client within a scrum team and was responsible for developing complex and robust data <b>ETL pipelines</b> that handles over <b>5M</b> daily incremental data
+                        </li>
+                        <li>
+                            Developed and deployed metadata ingestion framework (<b>dynamic SQL</b> and <b>SSIS</b> packages) to extract data from various on-premises sources to the cloud centralized database
+                        </li>
+                        <li>Utilized Azure Data Factory and Azure Data Lake to orchestrate data ingestion with full compliance with the client’s <b>security and latency</b> requirement </li>
+                        <li>Organized and scheduled regular meetings with clients and senior management to present progress and make alignments</li>
+                    </ul>
+                </div>
+                <div class="card-content__tenure">
+                    <span>May 2021 - Oct 2022 | Singapore</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="education-container">
+            <div class="wrapper">
+                <div class="divider div-transparent div-dot"></div>
+            </div>
+            <div class="section-header"> Education </div>
+            <div class="resume-cards">
+                <div class="card-content">
+                    <div class="card-content__row">
+                        <div class="col-logo">
+                            <a href="https://www.sutd.edu.sg" target="_blank"><img alt="SUTD logo"
+                                src="/static/img/sutd_logo.png" class="logo logo--sutd" /></a>
+                        </div>
+                        <div class="col-name">
+                            <p>
+                                <a href="https://www.sutd.edu.sg" target="_blank" class="institute-name institute-name__sutd"
+                                >Singapore University of Technology and Design</a>
+                            </p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                           Bachelor of Engineering: Engineering System and Design, Honors with distinction
+                        </li>
+                        <li>
+                            GPA: 4.36/5.0 
+                        </li>
+                        <li>Major: Business Analytics & Operation Research</li>                       
+                    </ul>
+                </div>
+                <div class="card-content__tenure">
+                    <span>May 2017 - Sep 2021 | Singapore</span>
+                </div>
+            </div>
+            <div class="resume-cards">
+                <div class="card-content">
+                    <div class="card-content__row">
+                        <div class="col-logo">
+                            <a href="https://www.berkeley.edu" target="_blank"><img alt="Berkeley logo"
+                                src="/static/img/berkeley_logo.png" class="logo logo--berkeley" /></a>
+                        </div>
+                        <div class="col-name">
+                            <p>
+                                <a href="https://www.berkeley.edu" target="_blank" class="institute-name institute-name__berkeley"
+                                >University of California, Berkeley</a>
+                            </p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Global Exchange Program, Summer School</li>
+                        <li>Awarded to top 20% of the cohort</li>
+                        <li>Cources: Data Science, Economics</li>                       
+                    </ul>
+                </div>
+                <div class="card-content__tenure">
+                    <span>Jun 2018 - Aug 2018 | United States</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-container">
+            <div class="wrapper">
+                <div class="divider div-transparent div-dot"></div>
+            </div>
+            <div class="section-header"> Skills </div>
+            <div class="all-skills">
+                {# <div class="programming-languages">
+                    <div class="title"> Programming Languages </div>
+                    <div class="img-container">
+                        <img alt="python image" src="/static/img/python.jpg" class="skill-img python" />Python
+                    </div>
+                    <div class="img-container">
+                        <img alt="sql image" src="/static/img/sql.png" class="skill-img sql" />SQL
+                    </div>
+                    <div class="img-container">
+                        <img alt="sql image" src="/static/img/r.png" class="skill-img r" />R
+                    </div>
+                </div> #}
+                <div class="skill-title">Programming Languages:</div>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="static/img/python.jpg" class="card-img-top" alt="python logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/sql.png" class="card-img-top" alt="sql logo">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/r.png" class="card-img-top" alt="r logo">
+                        <div class="card-body">
+                            <h5 class="card-title">R</h5>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="skill-title">Data Processing:</div>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="static/img/pyspark.png" class="card-img-top" alt="pyspark logo">
+                        <div class="card-body">
+                            <h5 class="card-title">PySpark</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/img/pandas.jpg" class="card-img-top" alt="pandas logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Pandas</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/sklearn.jpg" class="card-img-top" alt="sklearn logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Sklearn</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/numpy.jpg" class="card-img-top" alt="numpy logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Numpy</h5>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="skill-title">Data Visualization:</div>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="static/img/matplotlib.png" class="card-img-top" alt="matplotlib logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Matplotlib</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/img/plotly.png" class="card-img-top" alt="plotly logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Plotly</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/powerbi.png" class="card-img-top" alt="powerbi logo">
+                        <div class="card-body">
+                            <h5 class="card-title">PowerBI</h5>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="skill-title">Databases:</div>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="static/img/sql_server.png" class="card-img-top" alt="SQL Server logo">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL Server</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/img/postgres.png" class="card-img-top" alt="Postgres logo">
+                        <div class="card-body">
+                            <h5 class="card-title">PostgreSQL</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/mongodb.png" class="card-img-top" alt="MongoDB logo">
+                        <div class="card-body">
+                            <h5 class="card-title">MongoDB</h5>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="skill-title">Verson Control:</div>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="static/img/git.png" class="card-img-top" alt="Git logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Git</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/img/github.png" class="card-img-top" alt="github logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Github</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="certificates-container">
+            <div class="wrapper">
+                <div class="divider div-transparent div-dot"></div>
+            </div>
+            <div class="section-header"> Certificates </div>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="static/img/databricks_spark_cert.png" class="card-img-top" alt="Databrcisk certificate for spark">
+                        <div class="card-body">
+                            <h5 class="card-title">Databricks Certified Spark3.0 Developer</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/img/databricks_ml_cert.png" class="card-img-top" alt="Databrcisk certificate for ML">
+                        <div class="card-body">
+                            <h5 class="card-title">Databricks Certified Machine Learning Associate</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="static/img/databricks_engineer_cert.png" class="card-img-top" alt="Databrcisk certificate for DE">
+                        <div class="card-body">
+                            <h5 class="card-title">Databricks Certified Data Engineer Associate</h5>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</main>
+{% endblock %}
