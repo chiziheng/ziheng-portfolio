@@ -1,1 +1,1 @@
-web: gunicon "portfolio:create_app()"
+web: gunicorn "portfolio:create_app()"
