@@ -32,7 +32,7 @@ def create_app():
             "hero": "img/ziheng_nz_hero.jpg",
             "categories": ["Python", "Flask", "HTML", "CSS"],
             "slug": "ziheng-website",
-            "prod": "https://joywebsite.herokuapp.com/",
+            "prod": "https://ziheng-website.as.r.appspot.com",
         },
         {
             "name": "Online Kindle Book Store",
